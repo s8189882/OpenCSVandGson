@@ -9,7 +9,7 @@ import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvValidationException;
 
 public class OpenCSVReader {
-	public static final String SAMPLE_CSV_FILE_PATH = "/Users/apoorvasanglikar/BridegeLabz/JavaPrograms/RPF-Java/eclipse-workspace/OpenCSVandGsonLibraries/users.txt";
+	public static final String SAMPLE_CSV_FILE_PATH = "/Users/OpenCSVandGsonLibraries/users.txt";
 	
 	public static void main(String[] args) throws CsvValidationException, IOException  {
 		try (
@@ -26,5 +26,4 @@ public class OpenCSVReader {
 			}
 		}
 	}
-
 }
