@@ -10,7 +10,7 @@ import com.opencsv.bean.CsvToBean;
 import com.opencsv.bean.CsvToBeanBuilder;
 
 public class OpenCSVReader {
-	public static final String SAMPLE_CSV_FILE_PATH = "/Users/apoorvasanglikar/BridegeLabz/GitRepo/JavaP/JavaIO/OpenLibraries/OpenCSVandGsonLibraries/users.csv";
+	public static final String SAMPLE_CSV_FILE_PATH = "/Users/OpenCSVandGsonLibraries/users.csv";
 	
 	public static void main(String[] args) throws IOException {
 		try (
@@ -19,13 +19,13 @@ public class OpenCSVReader {
 			CsvToBean<CSVUser> csvToBean = new CsvToBeanBuilder<CSVUser>(reader).withType(CSVUser.class).withIgnoreLeadingWhiteSpace(true).build();
 			Iterator<CSVUser> csvUserIterator = csvToBean.iterator();
 			while (csvUserIterator.hasNext()) {
-                CSVUser csvUser = csvUserIterator.next();
-                System.out.println("Name : " + csvUser.getName());
-                System.out.println("Email : " + csvUser.getEmail());
-                System.out.println("Phone : " + csvUser.getPhoneNumber());
-                System.out.println("Country : " + csvUser.getCountry());
-                System.out.println("==========================");
-            }
+				CSVUser csvUser = csvUserIterator.next();
+				System.out.println("Name : " + csvUser.getName());
+				System.out.println("Email : " + csvUser.getEmail());
+				System.out.println("Phone : " + csvUser.getPhoneNumber());
+				System.out.println("Country : " + csvUser.getCountry());
+				System.out.println("==========================");
+				 }
 		}
 	}
 }
