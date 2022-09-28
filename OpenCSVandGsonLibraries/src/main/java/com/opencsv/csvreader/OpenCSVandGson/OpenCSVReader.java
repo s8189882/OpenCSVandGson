@@ -11,7 +11,7 @@ import com.opencsv.exceptions.CsvException;
 import com.opencsv.exceptions.CsvValidationException;
 
 public class OpenCSVReader {
-	public static final String SAMPLE_CSV_FILE_PATH = "/Users/apoorvasanglikar/BridegeLabz/GitRepo/JavaP/JavaIO/OpenLibraries/OpenCSVandGsonLibraries/users.csv";
+	public static final String SAMPLE_CSV_FILE_PATH = "/Users/OpenCSVandGsonLibraries/users.csv";
 	
 	public static void main(String[] args) throws IOException, CsvException  {
 		try (
